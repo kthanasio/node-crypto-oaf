@@ -1,6 +1,6 @@
 import { Challenge } from '../Challenge/Challenge'
+import { RESOURCE } from '../../shared/Resource';
 import axios, { AxiosResponse}  from 'axios'
-import { RESOURCE } from '../shared/Resource';
 
 interface req_options {
     applicationId: string
@@ -17,9 +17,11 @@ interface response {
     IdToken: string
 }
 
+const base_url = process.env.BASE_URL || ""
+
 export class GetToken {
 
-    constructor(private challenge: Challenge, private oaf_api_base_url: string = 'https://9hyxh9dsj1.execute-api.us-east-1.amazonaws.com/v1')
+    constructor(private challenge: Challenge, private oaf_api_base_url: string = base_url)
     {}
     
     public async getToken(params: req_options): Promise<response> {
@@ -66,8 +68,8 @@ export class GetToken {
             }
     }
 
-    public static build(): GetToken {
-        return new GetToken(new Challenge())
+    public static build(url?: string): GetToken {
+        return new GetToken(new Challenge(),url)
     }
 
 }
