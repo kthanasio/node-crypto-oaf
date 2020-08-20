@@ -1,0 +1,26 @@
+{
+  "name": "node-crypto-oaf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "jsrsasign": "^8.0.24",
+    "safer-buffer": "^2.1.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.58",
+    "@types/axios": "^0.14.0",
+    "@types/js-cookie": "^2.2.6",
+    "@types/jsrsasign": "^8.0.5",
+    "@types/safer-buffer": "^2.1.0"
+  }
+}
