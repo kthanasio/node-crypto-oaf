@@ -1,5 +1,5 @@
 import { KEYUTIL , hextob64, KJUR, RSAKey } from "jsrsasign"
-import { PAYLOADTYPE } from "../shared/PayloadType";
+import { PAYLOADTYPE } from "../shared";
 const Buffer = require('safer-buffer').Buffer
 type req = {
     publicKey: string

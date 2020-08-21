@@ -1,4 +1,4 @@
-import { RESOURCE } from '../../shared/Resource';
+import { RESOURCE } from '../../shared';
 import axios from 'axios'
 
 interface req_options {

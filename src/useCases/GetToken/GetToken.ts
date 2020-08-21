@@ -1,5 +1,5 @@
-import { Challenge } from '../Challenge/Challenge'
-import { RESOURCE } from '../../shared/Resource';
+import { Challenge } from '../'
+import { RESOURCE } from '../../shared';
 import axios, { AxiosResponse}  from 'axios'
 
 interface req_options {
