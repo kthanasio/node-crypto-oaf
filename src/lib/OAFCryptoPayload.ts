@@ -7,7 +7,7 @@ type req = {
     password: string
     type?: number
 }
-export function OAFCriptoPayload(data: req): string {
+export function OAFCryptoPayload(data: req): string {
     try {
         const { publicKey, username, password, type = PAYLOADTYPE.GETTOKEN } = data;
         const login = type == PAYLOADTYPE.GETTOKEN ? {"USERNAME": username , "PASSWORD": password} : {"USERNAME": username , "NEW_PASSWORD": password}
@@ -17,7 +17,7 @@ export function OAFCriptoPayload(data: req): string {
         if (keyObj instanceof RSAKey) {
             return hextob64(KJUR.crypto.Cipher.encrypt(JSON.stringify(login), keyObj, 'RSA'))
         }
-        throw new Error('Generic Error OAFCriptoPayload')
+        throw new Error('Generic Error OAFCryptoPayload')
     }
     catch (error) {
         throw new Error(error)

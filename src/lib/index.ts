@@ -1,1 +1,1 @@
-export { OAFCriptoPayload } from './OAFCriptoPayload'
+export { OAFCryptoPayload } from './OAFCryptoPayload'

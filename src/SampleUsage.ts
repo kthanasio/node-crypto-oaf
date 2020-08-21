@@ -1,5 +1,5 @@
 require('dotenv').config()
-import { OAFCriptoPayload } from './lib'
+import { OAFCryptoPayload } from './lib'
 import { GetToken, RefreshToken } from './useCases'
 import { PAYLOADTYPE } from './shared/PayloadType'
 
@@ -9,8 +9,8 @@ const password = process.env.PASSWORD || ""
 const applicationId = process.env.APPLICATIONID || ""
 const xApiKey = process.env.XAPIKEY || ""
 
-const _OAFCriptoPayload = OAFCriptoPayload({publicKey, username, password, type: PAYLOADTYPE.GETTOKEN})
-const _OAFCriptoPayloadChallenge = OAFCriptoPayload({publicKey, username, password, type: PAYLOADTYPE.CHALLENGE })
+const _OAFCriptoPayload = OAFCryptoPayload({publicKey, username, password, type: PAYLOADTYPE.GETTOKEN})
+const _OAFCriptoPayloadChallenge = OAFCryptoPayload({publicKey, username, password, type: PAYLOADTYPE.CHALLENGE })
 
 GetToken
 .build()

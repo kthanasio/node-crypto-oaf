@@ -1,2 +1,2 @@
 export { GetToken, Challenge, RefreshToken } from './useCases'
-export { OAFCriptoPayload } from './lib'
+export { OAFCryptoPayload } from './lib'
