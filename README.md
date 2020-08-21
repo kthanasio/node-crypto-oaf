@@ -20,7 +20,7 @@ const _OAFCryptoPayloadChallenge = OAFCryptoPayload({publicKey, username, passwo
 console.log(_OAFCryptoPayloadChallenge)
 ```
 
-## GET TOKEN
+## GET TOKEN (The challenge password flow is already being handle)
 
 ```
 import { GetToken, OAFCryptoPayload }  from 'node-crypto-oaf'
