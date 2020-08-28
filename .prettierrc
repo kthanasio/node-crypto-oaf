@@ -1,0 +1,13 @@
+{
+  printWidth: 80,
+  tabWidth: 4,
+  singleQuote: false,
+  trailingComma: 'none',
+  bracketSpacing: true,
+  semi: true,
+  useTabs: true,
+  // prettier-eslint doesn't currently support
+  // inferring these two (Pull Requests welcome):
+  parser: 'babylon',
+  jsxBracketSameLine: false,
+}
